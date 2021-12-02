@@ -14,8 +14,8 @@ function App() {
     <p>What are your favorite movies</p>
     <input type="text" id="in" /> <button id="b">Update</button>
     <nav > 
-   
-    <li >Titanic<button  onclick={()=>{}}>👍</button></li> 
+ 
+    <li >Titanic<button onClick={()=>{}}>👍</button></li>  
     <li>Toy Story 3</li> 
     <li>The Founder</li> 
     <li>Hunger Games</li> 
@@ -27,10 +27,11 @@ function App() {
         
       </header>
       <section>
-        Your Liked Movies:
+  Your Liked Movies: {movies[0]}
       </section>
     </div>
   );
 }
 
+<section href="orderList.js"></section>
 export default App;
