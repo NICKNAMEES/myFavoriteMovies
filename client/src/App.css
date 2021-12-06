@@ -20,7 +20,9 @@ section{
 }
 
 li button{
-  margin-left: 10px;
+ 
+  margin-left: 300px;
+
   
 }
 aside{
@@ -28,4 +30,5 @@ aside{
   outline-style: solid;
   outline-color: blue;
   width: 40%;
+  
 }

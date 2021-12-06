@@ -5,18 +5,19 @@ function App() {
   const [data,setData] = useState(false);
   const[print,setPrint]=useState(true);
   function getData(val)
+  
   {
     setData(val.target.value)
     setPrint(false)
     
   }
+  function handleLike(){
+if
+
+  }
   return (
     <div className="App">
-      {
-        print?
-      <h1>{data}</h1>
-      :null
-      }
+    
       <header className="App-header">
        
       
@@ -27,14 +28,21 @@ function App() {
     
     <aside > 
  
-    <li >Titanic<button onClick={()=>{}}>👍</button></li>  
-    <li>Toy Story 3</li> 
-    <li>The Founder</li> 
-    <li>Hunger Games</li> 
-    <li>Curious George</li> 
+    <li id="T" >Titanic<button onClick={handleLike}>👍</button></li>  
+    <li id="Ty">Toy Story<button onClick={handleLike}>👍</button></li>
+    <li id="TF" >The Founder<button onClick={handleLike}>👍</button></li>  
+    <li id="HG">Hunger Games<button onClick={handleLike}>👍</button></li>  
+    <li id="CG" >Curious George<button onClick={handleLike}>👍</button></li>  
+    
+   
+   
     </aside>
    
-         
+    {
+        print?
+      <aside> {data}</aside>
+      :null
+      }
          
         
       </header>

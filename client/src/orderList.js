@@ -9,3 +9,4 @@ function addLikedMovies(movies) {
 return movies[0];
 
 
+//get user input 
