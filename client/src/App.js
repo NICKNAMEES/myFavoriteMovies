@@ -11,10 +11,15 @@ function App() {
     setPrint(false)
     
   }
-  function handleLike(){
-if
+ 
+  
 
-  }
+  
+  function handleLike(){
+    
+
+}
+
   return (
     <div className="App">
     
@@ -22,7 +27,7 @@ if
        
       
         <h3> Favorite Movies</h3>
-        <input type="text" onChange={getData} /> <button onClick={()=>setPrint(true)}> Update</button>
+        <input type="text" onChange={getData} /> <button id="bb" onClick={()=>setPrint(true)}> Update</button>
     <p></p>
   
     
@@ -46,13 +51,21 @@ if
          
         
       </header>
-      <section>
+      <html>
+       <p id="i">
         
-  Your Liked Movies: 
-      </section>
+   
+      </p>  
+      </html>
+     
     </div>
   );
 }
+
+const list = ['Titanic','Toy Story','The Founder','Hunger Games','Curious George']; 
+
+  document.getElementById("i").innerHTML = "list";   
+  
 
 <section href="orderList.js"></section>
 export default App;
