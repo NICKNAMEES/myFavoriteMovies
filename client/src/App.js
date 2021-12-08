@@ -16,9 +16,8 @@ function App() {
 
   
   function handleLike(){
-    
 
-}
+  }
 
   return (
     <div className="App">
@@ -33,7 +32,7 @@ function App() {
     
     <aside > 
  
-    <li id="T" >Titanic<button onClick={handleLike}>👍</button></li>  
+    <li id="T" >Titanic<button onClick={handleLike} >👍</button></li>  
     <li id="Ty">Toy Story<button onClick={handleLike}>👍</button></li>
     <li id="TF" >The Founder<button onClick={handleLike}>👍</button></li>  
     <li id="HG">Hunger Games<button onClick={handleLike}>👍</button></li>  
@@ -45,27 +44,30 @@ function App() {
    
     {
         print?
-      <aside> {data}</aside>
+      <aside> {data}</aside> 
       :null
       }
          
         
       </header>
-      <html>
-       <p id="i">
+      
+       <section id="i">
         
-   
-      </p>  
-      </html>
+   Your Liked Movies: <li>{arr}</li>
+      </section>  
+     
      
     </div>
   );
 }
 
-const list = ['Titanic','Toy Story','The Founder','Hunger Games','Curious George']; 
+let arr = ['Titanic','Toy Story','The Founder','Hunger Games','Curious George']; 
 
-  document.getElementById("i").innerHTML = "list";   
+for(let i =0; i<arr.length; i++) {
   
+  console.log(arr[i]);
+}
+
 
 <section href="orderList.js"></section>
 export default App;
