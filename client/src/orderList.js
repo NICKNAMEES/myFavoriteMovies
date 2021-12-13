@@ -1,12 +1,15 @@
+import React from 'react'
 
-orderList=()=> {
-    const movies = ['Titanic','Toy Story 3','The Founder','Hunger Games','Curious George']
-}
-function addLikedMovies(movies) {
-   
-     
+const Book = ({id,,handleCheckout}) => {
+    function handleCheckout(id) {
+        const payload = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({id})
+        }
+        fetch("/checkout",payload)
+            .then(res => res.json())
+            .then(res => console.info(res))
     }
-return movies[0];
-
-
-//get user input 

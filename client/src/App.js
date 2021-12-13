@@ -1,21 +1,27 @@
 
 import './App.css';
 import React,{useState} from 'react'
+import orderList from './orderList'
 function App() {
   const [data,setData] = useState(false);
   const[print,setPrint]=useState(true);
   function getData(val)
   
   {
-    setData(val.target.value)
+    setData(val.target.value) //get value of the setData (.value)
     setPrint(false)
     
   }
  
+  function likedTitanic(){
+   
+    alert("You liked"+arr[0])
+  }
   
-
-  
+  //loop through likes then alert user
   function handleLike(){
+    alert("You liked"+arr[1])
+  //getElementById cam get id//
 
   }
 
@@ -51,14 +57,17 @@ function App() {
         
       </header>
       
-       <section id="i">
+       <section id="add">
         
-   Your Liked Movies: <li>{arr}</li>
+    Your Liked Movies: <li>{arr[4]}</li>
       </section>  
      
      
     </div>
   );
+    }
+if(){
+
 }
 
 let arr = ['Titanic','Toy Story','The Founder','Hunger Games','Curious George']; 
