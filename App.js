@@ -26,7 +26,7 @@ function App() {
       alert("You liked",arr[3])}
       function handleLikeCG(){
         alert("You liked",arr[4])}
-  //getElementById cam get id//
+  //getElementById can get id//
 let $likeTitanic = document.getElementById("T")
 let $likeCuriousGeorge = document.getElementById("CG")
 let $likeTheFounder = document.getElementById("TF")
@@ -77,7 +77,7 @@ let $likeHungerGames = document.getElementById("HG") // to get each movie by the
     }
 
 
-let arr = ['Titanic','Toy Story','The Founder','Hunger Games','Curious George']; //array listing the movies
+let arr = ['Titanic','Toy Story','The Founder','Hunger Games','Curious George']; //array listing the movies [0] is the first item
 
 for(let i =0; i<arr.length; i++) {
   
