@@ -3,7 +3,7 @@ const app = new express()
 const db = require('better-sqlite3')('movies')
 app.use(express.static("public"))
 app.get("/movies",(req,res) => {
-    const user = db.prepare("SELECT * FROM types_of_movies")
+    const user = db.prepare("SELECT * FROM movies") //named movies//
         .get(req.body.list)    
 })
 
