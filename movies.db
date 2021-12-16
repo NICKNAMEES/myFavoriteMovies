@@ -1,0 +1,10 @@
+
+ CREATE TABLE "movies" (
+        "id"            INTEGER UNIQUE,
+        "movieName"   TEXT,
+        "rankBest"    BOOLEAN,
+        "add"         BOOLEAN,
+        "didLike"     BOOLEAN,
+        PRIMARY KEY("id")
+    );
+    
