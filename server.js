@@ -13,7 +13,7 @@ app.post("/addmovie",(req,res)=>{
         listId: 1
     })
 })
-
+//used listed to see the port(8080)//
 app.listen(8080,() => { 
     console.log("server started")
 })
